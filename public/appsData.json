@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "title": "ChatSphere",
+    "companyName": "NovaSoft",
+    "category": "Social",
+    "image": "https://i.ibb.co.com/svcqBWvv/Chat-Sphere.png",
+    "description": "ChatSphere lets you connect with friends and communities worldwide with real-time chat, voice, and video calls. It provides a sleek interface, privacy-first encryption, and tons of customization. Stay connected without distractions and join thousands of public servers to share ideas, hobbies, and fun moments.",
+    "size": 52.4,
+    "reviews": 18200,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 10600 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Taskify Pro",
+    "companyName": "OrgaTech",
+    "category": "Productivity",
+    "image": "https://i.ibb.co.com/wNg5tBc4/Taskify-Pro.png",
+    "description": "Taskify Pro helps you organize your work and life efficiently. With its AI-based task suggestions, smart reminders, and team collaboration tools, productivity is easier than ever. Manage personal to-do lists, project boards, and daily schedules—all synced seamlessly across devices.",
+    "size": 44.7,
+    "reviews": 9600,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "FitPulse",
+    "companyName": "WellGo",
+    "category": "Health & Fitness",
+    "image": "https://i.ibb.co.com/5gnfPyMk/FitPulse.jpg",
+    "description": "FitPulse is your all-in-one fitness companion. Track workouts, monitor calories, and stay motivated with progress charts. The app supports AI-driven workout recommendations based on your body type and goals. Sync your smart devices and start your journey to a healthier life today.",
+    "size": 68.2,
+    "reviews": 21200,
+    "ratingAvg": 4.8,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4400 },
+      { "name": "5 star", "count": 14000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "PhotoLab X",
+    "companyName": "PixelCore",
+    "category": "Photography",
+    "image": "https://i.ibb.co.com/twzbfX5z/Photo-Lab-X.png",
+    "description": "PhotoLab X offers AI-enhanced photo editing tools to transform your pictures instantly. Apply filters, remove backgrounds, adjust lighting, and enhance portraits using one tap. The app is optimized for both beginners and professional photographers who want studio-quality results on the go.",
+    "size": 85.3,
+    "reviews": 27800,
+    "ratingAvg": 4.4,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 1400 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Learnify",
+    "companyName": "EduSpark",
+    "category": "Education",
+    "image": "https://i.ibb.co.com/pB8Wbzn1/Learnify.png",
+    "description": "Learnify makes learning interactive and fun. It offers thousands of video courses, quizzes, and gamified lessons from top instructors around the world. With offline downloads and progress tracking, you can learn anytime, anywhere—at your own pace.",
+    "size": 63.8,
+    "reviews": 15400,
+    "ratingAvg": 4.7,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "NoteMaster",
+    "companyName": "ThinkCloud",
+    "category": "Productivity",
+    "image": "https://i.ibb.co.com/ZR27NPLd/Note-Master.png",
+    "description": "NoteMaster helps you organize ideas, lists, and documents in one smart workspace. Sync across devices, attach media, and use tags for better organization. The clean interface and cloud-based storage make it ideal for students, professionals, and creatives alike.",
+    "size": 39.2,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "TravelMate",
+    "companyName": "SkyBound",
+    "category": "Travel",
+    "image": "https://i.ibb.co.com/SDr2V5Kh/Travel-Mate.png",
+    "description": "TravelMate simplifies trip planning by providing real-time flight updates, hotel deals, and local attractions. With its smart itinerary generator and offline maps, you can explore anywhere without hassle. Perfect for solo travelers and adventurers.",
+    "size": 58.1,
+    "reviews": 12900,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 7800 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "SoundFlow",
+    "companyName": "AudioLab",
+    "category": "Music & Audio",
+    "image": "https://i.ibb.co.com/V0wXFRym/Sound-Flow.png",
+    "description": "SoundFlow lets you stream high-quality music, create playlists, and discover new artists. It supports offline playback, smart EQ settings, and personalized recommendations. Whether you’re working, relaxing, or partying, SoundFlow brings the right vibe every time.",
+    "size": 88.7,
+    "reviews": 30100,
+    "ratingAvg": 4.8,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 4600 },
+      { "name": "5 star", "count": 21400 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "DailyNews 360",
+    "companyName": "Global Media Co.",
+    "category": "News & Magazines",
+    "image": "https://i.ibb.co.com/n8CQh2dK/Daily-News-360.png",
+    "description": "DailyNews 360 keeps you updated with breaking news, trending stories, and live coverage from trusted global sources. Customize your feed to follow tech, politics, entertainment, and more. Stay informed with concise summaries and offline reading support.",
+    "size": 46.5,
+    "reviews": 17700,
+    "ratingAvg": 4.4,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 8100 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Weatherly",
+    "companyName": "ClimaTech",
+    "category": "Weather",
+    "image": "https://i.ibb.co.com/pvW3vm2w/Weatherly.png",
+    "description": "Weatherly delivers hyper-accurate forecasts, live radar maps, and severe weather alerts. Get hourly, daily, and weekly forecasts based on your location. The clean interface and customizable widgets make it a must-have for planning your day or your next trip.",
+    "size": 41.8,
+    "reviews": 8300,
+    "ratingAvg": 4.6,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "ShopEase",
+    "companyName": "BuySmart",
+    "category": "Shopping",
+    "image": "https://i.ibb.co.com/XxRxDQZR/ShopEase.png",
+    "description": "ShopEase brings you a smarter way to shop online. Discover trending products, flash deals, and personalized recommendations from your favorite brands. Track your orders in real time and enjoy fast, secure payments. With its AI-powered price comparison and exclusive coupons, ShopEase makes sure you always get the best deal available.",
+    "size": 72.4,
+    "reviews": 18500,
+    "ratingAvg": 4.7,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "GameHub",
+    "companyName": "NovaPlay",
+    "category": "Games",
+    "image": "https://i.ibb.co.com/ds1QvHxv/GameHub.png",
+    "description": "GameHub is the ultimate destination for mobile gamers. Play hundreds of addictive mini-games, challenge friends, and earn rewards. It supports online leaderboards, daily tournaments, and offline play. GameHub’s sleek design and lightning-fast performance make it perfect for casual and hardcore gamers alike.",
+    "size": 89.1,
+    "reviews": 25600,
+    "ratingAvg": 4.8,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 17000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "MindCalm",
+    "companyName": "ZenSpace",
+    "category": "Health & Fitness",
+    "image": "https://i.ibb.co.com/V0Rr9WXC/MindCalm.png",
+    "description": "MindCalm helps you reduce stress and improve focus with guided meditations, breathing exercises, and sleep sounds. Choose from hundreds of mindfulness programs designed by experts. Whether you're a beginner or a meditation pro, MindCalm adapts to your mood and schedule, helping you build a calmer, happier life.",
+    "size": 61.3,
+    "reviews": 9100,
+    "ratingAvg": 4.5,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "CookBook Pro",
+    "companyName": "Foodify",
+    "category": "Food & Drink",
+    "image": "https://i.ibb.co.com/QFcs2Jfc/Cook-Book-Pro.png",
+    "description": "CookBook Pro is your ultimate cooking assistant. Explore thousands of chef-tested recipes with step-by-step instructions, cooking timers, and nutritional info. Create grocery lists automatically and save your favorite dishes to personal collections. Perfect for beginners and food lovers who enjoy experimenting in the kitchen.",
+    "size": 53.2,
+    "reviews": 7800,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3400 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "SecureVault",
+    "companyName": "SafeNet",
+    "category": "Tools",
+    "image": "https://i.ibb.co.com/0j4ChkG6/Secure-Vault.png",
+    "description": "SecureVault stores all your private data — passwords, notes, and documents — in one encrypted place. Use fingerprint or face ID for quick access. It never uploads your files to the cloud, keeping everything safely offline. Designed with military-grade encryption (AES-256) to give you ultimate peace of mind.",
+    "size": 49.7,
+    "reviews": 5100,
+    "ratingAvg": 4.6,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "RideOn",
+    "companyName": "UrbanGo",
+    "category": "Travel",
+    "image": "https://i.ibb.co.com/KQd6h83/RideOn.jpg",
+    "description": "RideOn gives you quick and affordable rides across your city. Choose from cars, bikes, or shared cabs with transparent pricing and driver ratings. It offers GPS tracking, SOS safety features, and instant fare splitting. RideOn ensures your travel experience is smooth, secure, and budget-friendly every time.",
+    "size": 70.5,
+    "reviews": 19600,
+    "ratingAvg": 4.7,
+    "downloads": 3800000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 12000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "BookNest",
+    "companyName": "Readify",
+    "category": "Books & Reference",
+    "image": "https://i.ibb.co.com/1Yw7mzm9/BookNest.png",
+    "description": "BookNest gives you access to thousands of eBooks and audiobooks across all genres. Sync reading progress across devices, highlight text, and take notes. It also features a night mode, offline reading, and personalized recommendations based on your interests. Discover your next favorite book with BookNest.",
+    "size": 81.3,
+    "reviews": 8900,
+    "ratingAvg": 4.4,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "StreamBox",
+    "companyName": "CineWave",
+    "category": "Entertainment",
+    "image": "https://i.ibb.co.com/1fqDf5xm/Stream-Box.png",
+    "description": "StreamBox is your personal cinema in your pocket. Watch movies, web series, and documentaries in HD without interruptions. Its recommendation engine curates content tailored to your taste. Download videos for offline viewing and enjoy seamless playback with adaptive streaming technology.",
+    "size": 95.0,
+    "reviews": 24500,
+    "ratingAvg": 4.8,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 17400 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Mapster",
+    "companyName": "GeoTech",
+    "category": "Navigation",
+    "image": "https://i.ibb.co.com/8L53VJDY/Mapster.png",
+    "description": "Mapster helps you navigate cities and explore new places easily. It provides real-time traffic updates, voice navigation, and offline map downloads. Discover restaurants, gas stations, and local landmarks around you. With smart route optimization, save time and fuel on every trip.",
+    "size": 77.2,
+    "reviews": 13400,
+    "ratingAvg": 4.5,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 7200 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "CryptoVault",
+    "companyName": "BlockSecure",
+    "category": "Finance",
+    "image": "https://i.ibb.co.com/HL8DXc9r/Crypto-Vault.png",
+    "description": "CryptoVault is a secure digital wallet for storing and managing your cryptocurrencies. Buy, sell, and track Bitcoin, Ethereum, and other assets with ease. The app uses advanced blockchain encryption to protect your funds. Get instant alerts on market trends and make informed investment decisions anytime, anywhere.",
+    "size": 59.8,
+    "reviews": 7200,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 3400 }
+    ]
+  }
+]
