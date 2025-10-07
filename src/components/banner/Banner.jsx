@@ -11,11 +11,11 @@ const Banner = () => {
                 <h1 className='text-5xl md:text-7xl font-bold text-[#001931] mb-6'>We Build <br /> <span className='bg-linear-to-l to-[#632EE3] from-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
                 <p className='text-gray-500 w-2/3 mx-auto'>At GetSoft, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='flex justify-center gap-5 py-10'>
-                    <a href='https://play.google.com/' class="btn bg-white text-black border-[#e5e5e5]">
+                    <a href='https://play.google.com/' className="btn bg-white text-black border-[#e5e5e5]">
                         <img className='w-5' src={playImg} alt="play store" />
                         Google Play
                     </a>
-                    <a href='https://apps.apple.com/' class="btn bg-white text-black border-[#e5e5e5]">
+                    <a href='https://apps.apple.com/' className="btn bg-white text-black border-[#e5e5e5]">
                         <img className='w-5' src={appImg} alt="app store" />
                         App Store
                     </a>
