@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import downloadIcon from '../../assets/downloads.png';
 import ratingIcon from '../../assets/ratings.png';
 import reviewIcon from '../../assets/review.png';
 import { abbreviateNumber } from 'js-abbreviation-number';
 import ReviewChart from '../../components/chart/ReviewChart';
+import { ToastContainer } from 'react-toastify';
+import { getLSData, setLSData } from '../../utility/DB';
 
 const Details = () => {
     const { id } = useParams();
     const appsData = useLoaderData();
+    const [isInstall, setIsInstall] = useState(false);
+
     const targetApp = appsData.find(app=> app.id == Number(id));
     const {title, companyName, category, image, description, size, reviews, ratingAvg, downloads,  ratings} = targetApp;
+
+    const LSData = getLSData();
+    const alreadyStore = LSData.includes(id);
+    
+    const handleInstall = () => {
+        setIsInstall(true)
+        setLSData(id, title);
+    }
 
     return (
         <div className='w-11/12 mx-auto my-20'>
@@ -40,7 +52,9 @@ const Details = () => {
                             <p className='text-[#001931] font-extrabold text-3xl md:text-[40px]'>{abbreviateNumber(reviews, 1) }</p>
                         </div>
                     </div>
-                    <button className='bg-[#00D390] text-white py-3 px-5 rounded text-xl font-semibold cursor-pointer'>Install Now ({size} MB)</button>
+                    <button onClick={handleInstall} className={`bg-[#00D390] text-white py-3 px-5 rounded text-xl font-semibold ${isInstall ? 'cursor-not-allowed bg-[#099669]' : 'cursor-pointer'}`}>
+                        {(isInstall || alreadyStore) ? "Installed" : `Install Now (${size} MB)`}
+                    </button>
                 </div>
             </div>
             <div className="divider"></div>
@@ -59,6 +73,7 @@ const Details = () => {
                     <p className='leading-7 text-[#627382]'>{description} {description}</p>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
