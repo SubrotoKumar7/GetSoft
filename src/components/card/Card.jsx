@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router';
 
 const Card = ({app}) => {
     const navigator = useNavigate();
-    const {image, title, ratingAvg, downloads} = app;
+    const {id, image, title, ratingAvg, downloads} = app;
     return (
-        <div onClick={()=> navigator(`/details`)} className='cursor-pointer shadow-lg p-4 border border-white rounded-lg bg-white hover:scale-105'>
+        <div onClick={()=> navigator(`/details/${id}`)} className='cursor-pointer shadow-lg p-4 border border-white rounded-lg bg-white hover:scale-105'>
             <img className='w-full rounded' src={image} alt={`${title} images`} />
             <h1 className='text-xl font-medium my-4'>{title}</h1>
             <div className='flex justify-between gap-2'>
