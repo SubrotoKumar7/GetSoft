@@ -52,7 +52,7 @@ const Details = () => {
                             <p className='text-[#001931] font-extrabold text-3xl md:text-[40px]'>{abbreviateNumber(reviews, 1) }</p>
                         </div>
                     </div>
-                    <button onClick={handleInstall} className={`bg-[#00D390] text-white py-3 px-5 rounded text-xl font-semibold ${isInstall ? 'cursor-not-allowed bg-[#099669]' : 'cursor-pointer'}`}>
+                    <button onClick={handleInstall} className={`bg-[#00D390] text-white py-3 px-5 rounded text-xl font-semibold ${(isInstall || alreadyStore) ? 'cursor-not-allowed bg-[#099669]' : 'cursor-pointer'}`}>
                         {(isInstall || alreadyStore) ? "Installed" : `Install Now (${size} MB)`}
                     </button>
                 </div>
