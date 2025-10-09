@@ -1,9 +1,8 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { getLSData, removeLSData } from '../../utility/DB';
 import { useLoaderData } from 'react-router';
 import InstalledApp from '../../components/installedApp/InstalledApp';
 import { toast } from 'react-toastify';
-import { useState } from 'react';
 import NotInstalled from '../../components/notInstalled/NotInstalled';
 
 const Installed = () => {
