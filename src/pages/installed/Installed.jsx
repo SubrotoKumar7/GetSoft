@@ -4,15 +4,20 @@ import { useLoaderData } from 'react-router';
 import InstalledApp from '../../components/installedApp/InstalledApp';
 import { BiSolidDownArrow } from 'react-icons/bi';
 import { toast } from 'react-toastify';
+import { useState } from 'react';
+import NotInstalled from '../../components/notInstalled/NotInstalled';
 
 const Installed = () => {
     const allData = useLoaderData();
     const LSData = getLSData();
     const filterData = allData.filter(app=> LSData.includes((app.id).toString()));
+    const [store, setStore] = useState(filterData);
 
     const handleRemove = (id, title) => {
         removeLSData(id);
         toast.info(`${title} uninstall successful`);
+        const filterRemove = store.filter(app=> app.id !== Number(id));
+        setStore(filterRemove);
     }
 
     return (
@@ -37,7 +42,9 @@ const Installed = () => {
 
             <div>
                 {
-                    filterData.map(app => <InstalledApp key={app.id} app={app} handleRemove={handleRemove}></InstalledApp>)
+                    store.length === 0 ? <NotInstalled></NotInstalled> 
+                    :
+                    store.map(app => <InstalledApp key={app.id} app={app} handleRemove={handleRemove}></InstalledApp>)
                 }
             </div>
         </div>
