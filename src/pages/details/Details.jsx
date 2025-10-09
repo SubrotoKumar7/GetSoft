@@ -38,7 +38,7 @@ const Details = () => {
                         <div className='w-[150px]'>
                             <img className='w-10' src={downloadIcon} alt="icon" />
                             <p className='my-2'>Downloads</p>
-                            <p className='text-[#001931] font-extrabold text-3xl md:text-[40px]'>{downloads}</p>
+                            <p className='text-[#001931] font-extrabold text-3xl md:text-[40px]'>{abbreviateNumber(downloads, 1)}</p>
                         </div>
                         <div className='w-[150px]'>
                             <img className='w-10' src={ratingIcon} alt="icon" />

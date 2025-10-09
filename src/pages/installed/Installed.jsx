@@ -2,7 +2,6 @@
 import { getLSData, removeLSData } from '../../utility/DB';
 import { useLoaderData } from 'react-router';
 import InstalledApp from '../../components/installedApp/InstalledApp';
-import { BiSolidDownArrow } from 'react-icons/bi';
 import { toast } from 'react-toastify';
 import { useState } from 'react';
 import NotInstalled from '../../components/notInstalled/NotInstalled';
@@ -12,6 +11,7 @@ const Installed = () => {
     const LSData = getLSData();
     const filterData = allData.filter(app=> LSData.includes((app.id).toString()));
     const [store, setStore] = useState(filterData);
+    const [sort, setSort] = useState('');
 
     const handleRemove = (id, title) => {
         removeLSData(id);
@@ -19,6 +19,20 @@ const Installed = () => {
         const filterRemove = store.filter(app=> app.id !== Number(id));
         setStore(filterRemove);
     }
+
+    const handleSort = (value) => {
+        setSort(value);
+        if (value === 'H2L') {
+            const h2l = [...store].sort((a, b) => Number(b.downloads) - Number(a.downloads));
+            setStore(h2l);
+        } else if (value === 'L2H') {
+            const l2h = [...store].sort((a, b) => Number(a.downloads) - Number(b.downloads));
+            setStore(l2h);
+        } else {
+            setStore(filterData);
+        }
+    };
+
 
     return (
         <div className='w-11/12 mx-auto my-20'>
@@ -28,14 +42,12 @@ const Installed = () => {
             <div className='mt-10'>
                 <div className='flex justify-between items-center gap-5'>
                     <p className='text-2xl font-semibold'>{LSData.length} Apps Found</p>
-                    <div>
-                        <div className="dropdown dropdown-bottom">
-                            <div tabIndex={0} role="button" className="btn m-1">Sort By Downloads <BiSolidDownArrow /> </div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><a>High-Low</a></li>
-                                <li><a>Low-High</a></li>
-                            </ul>
-                        </div>
+                    <div className='w-[180px]'>
+                        <select onChange={(e) => handleSort(e.target.value)} value={sort} className="select select-neutral w-full">
+                            <option value='none'>Sort By Downloads</option>
+                            <option value='H2L'>High to Low</option>
+                            <option value='L2H'>Low to High</option>
+                        </select>
                     </div>
                 </div>
             </div>

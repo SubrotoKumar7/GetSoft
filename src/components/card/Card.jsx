@@ -2,6 +2,7 @@ import React from 'react';
 import downloadImg from '../../assets/downloads.png';
 import ratingImg from '../../assets/ratings.png';
 import { useNavigate } from 'react-router';
+import { abbreviateNumber } from 'js-abbreviation-number';
 
 const Card = ({app}) => {
     const navigator = useNavigate();
@@ -13,7 +14,7 @@ const Card = ({app}) => {
             <div className='flex justify-between gap-2'>
                 <div className="btn py-1 px-2 bg-green-100 text-green-600">
                     <img className='w-4' src={downloadImg} alt="icon" />
-                    {downloads}
+                    {abbreviateNumber(downloads, 1)}
                 </div>
                 <div className="btn py-1 px-2 bg-amber-100 text-amber-600">
                     <img className='w-4' src={ratingImg} alt="icon" />

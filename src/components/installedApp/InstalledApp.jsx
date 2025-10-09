@@ -1,6 +1,7 @@
 import React from 'react';
 import downArrow from '../../assets/downloads.png';
 import ratingArrow from '../../assets/ratings.png';
+import { abbreviateNumber } from 'js-abbreviation-number';
 
 const InstalledApp = ({app, handleRemove}) => {
     const {image, title, downloads, ratingAvg, size, id} = app;
@@ -13,7 +14,7 @@ const InstalledApp = ({app, handleRemove}) => {
                     <div className='flex gap-1 md:gap-3'>
                         <div className='flex items-center gap-1 text-green-600'>
                             <img className='w-4' src={downArrow} alt="icon" />
-                            <p className='font-medium'>{downloads}</p>
+                            <p className='font-medium'>{abbreviateNumber(downloads, 1)}</p>
                         </div>
                         <div className='flex items-center gap-1 text-amber-600'>
                             <img className='w-4' src={ratingArrow} alt="icon" />
