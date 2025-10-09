@@ -18,11 +18,18 @@ const setLSData = (id, title) => {
         return;
     }
     else{
+        toast.success(`${title} install successfully`, {position: "top-center"});
         const currentData = [...oldData, id];
         const str = JSON.stringify(currentData);
         localStorage.setItem('list', str);
-        toast.success(`${title} install successfully`, {position: "top-center"});
     }
 }
 
-export {getLSData, setLSData}
+const removeLSData = (id) => {
+    const oldData = getLSData();
+    const filter = oldData.filter(appId => appId !== String(id));
+    const str = JSON.stringify(filter);
+    localStorage.setItem('list', str);
+}
+
+export {getLSData, setLSData, removeLSData}

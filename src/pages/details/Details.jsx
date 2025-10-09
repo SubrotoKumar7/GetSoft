@@ -5,7 +5,6 @@ import ratingIcon from '../../assets/ratings.png';
 import reviewIcon from '../../assets/review.png';
 import { abbreviateNumber } from 'js-abbreviation-number';
 import ReviewChart from '../../components/chart/ReviewChart';
-import { ToastContainer } from 'react-toastify';
 import { getLSData, setLSData } from '../../utility/DB';
 
 const Details = () => {
@@ -73,7 +72,6 @@ const Details = () => {
                     <p className='leading-7 text-[#627382]'>{description} {description}</p>
                 </div>
             </div>
-            <ToastContainer></ToastContainer>
         </div>
     );
 };

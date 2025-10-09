@@ -2,8 +2,8 @@ import React from 'react';
 import downArrow from '../../assets/downloads.png';
 import ratingArrow from '../../assets/ratings.png';
 
-const InstalledApp = ({app}) => {
-    const {image, title, downloads, ratingAvg, size} = app;
+const InstalledApp = ({app, handleRemove}) => {
+    const {image, title, downloads, ratingAvg, size, id} = app;
     return (
         <div className='flex items-center justify-between gap-3 md:gap-5 my-6 bg-white p-2 rounded-lg shadow hover:shadow-xl'>
             <div className='flex justify-center items-center gap-1 md:gap-3'>
@@ -24,7 +24,7 @@ const InstalledApp = ({app}) => {
                 </div>
             </div>
             <div>
-                <button className='bg-[#00D390] text-white font-semibold rounded py-2 px-3 hover:cursor-pointer'>Uninstall</button>
+                <button onClick={()=> handleRemove(id, title)} className='bg-[#00D390] text-white font-semibold rounded py-2 px-3 hover:cursor-pointer'>Uninstall</button>
             </div>
         </div>
     );

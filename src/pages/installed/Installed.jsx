@@ -1,15 +1,19 @@
-import React from 'react';
-import { getLSData } from '../../utility/DB';
+// import React, { useState } from 'react';
+import { getLSData, removeLSData } from '../../utility/DB';
 import { useLoaderData } from 'react-router';
 import InstalledApp from '../../components/installedApp/InstalledApp';
 import { BiSolidDownArrow } from 'react-icons/bi';
+import { toast } from 'react-toastify';
 
 const Installed = () => {
     const allData = useLoaderData();
     const LSData = getLSData();
-    const data = LSData;
-    const filterData = allData.filter(app=> data.includes((app.id).toString()));
-    console.log(filterData);
+    const filterData = allData.filter(app=> LSData.includes((app.id).toString()));
+
+    const handleRemove = (id, title) => {
+        removeLSData(id);
+        toast.info(`${title} uninstall successful`);
+    }
 
     return (
         <div className='w-11/12 mx-auto my-20'>
@@ -33,7 +37,7 @@ const Installed = () => {
 
             <div>
                 {
-                    filterData.map(app => <InstalledApp key={app.id} app={app}></InstalledApp>)
+                    filterData.map(app => <InstalledApp key={app.id} app={app} handleRemove={handleRemove}></InstalledApp>)
                 }
             </div>
         </div>
