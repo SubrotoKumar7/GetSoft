@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Card from '../../components/card/Card';
 import NotFound from '../../components/notFound/NotFound';
+import Loading from '../../components/loading/Loading';
 
 const App = () => {
     const allData = useLoaderData();
     const [search, setSearch] = useState('');
-
+    const [loading, setLoading] = useState(false);
     const searchResult = allData.filter(app=> ((app.title).toLowerCase()).includes((search).toLowerCase().trim()));
-
     const showAll = search.trim() === '';
     const displayData = showAll ? allData : searchResult;
+
+    useEffect(() => {
+        if (search.trim() === '') {
+            setLoading(false);
+            return;
+        }
+        setLoading(true);
+        const delay = setTimeout(() => {
+            setLoading(false);
+        }, 500);
+        return () => clearTimeout(delay);
+    }, [search]);
 
 
     return (
@@ -42,6 +54,9 @@ const App = () => {
 
                 <div>
                     {
+                        loading ? 
+                        <Loading></Loading>
+                        :
                         (!showAll && searchResult.length === 0) ? 
                         <NotFound></NotFound>
                         : 
