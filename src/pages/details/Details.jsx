@@ -63,7 +63,7 @@ const Details = () => {
             </div>
             <div className="divider"></div>
             <div>
-                <h1 className='text-2xl mb-6 font-semibold text-[#001931]'>Ratings</h1>
+                <h1 className='text-2xl mb-6 font-semibold text-[#001931]'>Description</h1>
                 <div>
                     <p className='leading-7 text-[#627382]'>{description} {description}</p>
                     <br />
