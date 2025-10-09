@@ -6,8 +6,7 @@ Welcome to **GetSoft**, a React-based app discovery platform, inspired by the de
 
 ## 🚀 Live Demo
 
-🔗 [Live Site](https://your-live-link.vercel.app)  
-*(Replace with your actual deployed link)*
+🔗 [Live Site](https://getsoft.pages.dev)  
 
 ---
 
